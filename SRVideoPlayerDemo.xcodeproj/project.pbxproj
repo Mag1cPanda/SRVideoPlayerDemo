@@ -7,15 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2299E4DD467C5B29F60D022C /* libPods-SRVideoPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0701BA2480A33C12512C4EBE /* libPods-SRVideoPlayerDemo.a */; };
 		58FC441121B130F20094E02C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441021B130F20094E02C /* AppDelegate.m */; };
 		58FC441421B130F20094E02C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441321B130F20094E02C /* ViewController.m */; };
 		58FC441721B130F20094E02C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FC441521B130F20094E02C /* Main.storyboard */; };
 		58FC441921B130F40094E02C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58FC441821B130F40094E02C /* Assets.xcassets */; };
 		58FC441C21B130F40094E02C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FC441A21B130F40094E02C /* LaunchScreen.storyboard */; };
 		58FC441F21B130F40094E02C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441E21B130F40094E02C /* main.m */; };
+		58FC442B21B1325C0094E02C /* JPVPNetEasyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC442621B1325B0094E02C /* JPVPNetEasyTableViewCell.m */; };
+		58FC442C21B1325C0094E02C /* JPVPNetEasyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FC442921B1325B0094E02C /* JPVPNetEasyTableViewCell.xib */; };
+		58FC442D21B1325C0094E02C /* JPVPNetEasyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC442A21B1325B0094E02C /* JPVPNetEasyViewController.m */; };
+		58FC443421B132A60094E02C /* JPVideoPlayerSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC443121B132A60094E02C /* JPVideoPlayerSettingViewController.m */; };
+		58FC443521B132A60094E02C /* JPVideoPlayerSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FC443221B132A60094E02C /* JPVideoPlayerSettingViewController.xib */; };
+		58FC443821B132B00094E02C /* JPQRCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC443721B132B00094E02C /* JPQRCodeTool.m */; };
+		58FC444B21B132C70094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FC443A21B132C50094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.xib */; };
+		58FC444C21B132C70094E02C /* JPVideoPlayerWeiBoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC443D21B132C50094E02C /* JPVideoPlayerWeiBoListViewController.m */; };
+		58FC444D21B132C70094E02C /* JPVideoPlayerWeiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC444021B132C50094E02C /* JPVideoPlayerWeiBoViewController.m */; };
+		58FC444E21B132C70094E02C /* JPVideoPlayerWeiBoEqualHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC444121B132C50094E02C /* JPVideoPlayerWeiBoEqualHeightCell.m */; };
+		58FC444F21B132C70094E02C /* JPVideoPlayerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FC444221B132C60094E02C /* JPVideoPlayerDetailViewController.xib */; };
+		58FC445021B132C70094E02C /* JPVideoPlayerAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC444321B132C60094E02C /* JPVideoPlayerAudioViewController.m */; };
+		58FC445121B132C70094E02C /* JPVideoPlayerHoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC444421B132C60094E02C /* JPVideoPlayerHoverViewController.m */; };
+		58FC445221B132C70094E02C /* JPVideoPlayerWeiBoEqualHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FC444521B132C60094E02C /* JPVideoPlayerWeiBoEqualHeightCell.xib */; };
+		58FC445321B132C70094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC444721B132C60094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.m */; };
+		58FC445421B132C70094E02C /* JPVideoPlayerAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FC444821B132C60094E02C /* JPVideoPlayerAudioViewController.xib */; };
+		58FC445521B132C70094E02C /* JPVideoPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC444A21B132C70094E02C /* JPVideoPlayerDetailViewController.m */; };
+		58FC445821B132DC0094E02C /* JPVideoPlayerDouyinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC445721B132DC0094E02C /* JPVideoPlayerDouyinViewController.m */; };
+		58FC445A21B137480094E02C /* designedByAppleInCalifornia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 58FC445921B137480094E02C /* designedByAppleInCalifornia.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0701BA2480A33C12512C4EBE /* libPods-SRVideoPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRVideoPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BA0CF224BAE4761E96064D9 /* Pods-SRVideoPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRVideoPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRVideoPlayerDemo/Pods-SRVideoPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		58FC440C21B130F20094E02C /* SRVideoPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRVideoPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FC440F21B130F20094E02C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58FC441021B130F20094E02C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +48,38 @@
 		58FC441B21B130F40094E02C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58FC441D21B130F40094E02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58FC441E21B130F40094E02C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58FC442621B1325B0094E02C /* JPVPNetEasyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVPNetEasyTableViewCell.m; sourceTree = "<group>"; };
+		58FC442721B1325B0094E02C /* JPVPNetEasyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVPNetEasyViewController.h; sourceTree = "<group>"; };
+		58FC442821B1325B0094E02C /* JPVPNetEasyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVPNetEasyTableViewCell.h; sourceTree = "<group>"; };
+		58FC442921B1325B0094E02C /* JPVPNetEasyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVPNetEasyTableViewCell.xib; sourceTree = "<group>"; };
+		58FC442A21B1325B0094E02C /* JPVPNetEasyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVPNetEasyViewController.m; sourceTree = "<group>"; };
+		58FC443121B132A60094E02C /* JPVideoPlayerSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerSettingViewController.m; sourceTree = "<group>"; };
+		58FC443221B132A60094E02C /* JPVideoPlayerSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerSettingViewController.xib; sourceTree = "<group>"; };
+		58FC443321B132A60094E02C /* JPVideoPlayerSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerSettingViewController.h; sourceTree = "<group>"; };
+		58FC443621B132B00094E02C /* JPQRCodeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPQRCodeTool.h; sourceTree = "<group>"; };
+		58FC443721B132B00094E02C /* JPQRCodeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPQRCodeTool.m; sourceTree = "<group>"; };
+		58FC443921B132C40094E02C /* JPVideoPlayerWeiBoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerWeiBoListViewController.h; sourceTree = "<group>"; };
+		58FC443A21B132C50094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerWeiBoUnequalHeightCell.xib; sourceTree = "<group>"; };
+		58FC443B21B132C50094E02C /* JPVideoPlayerAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerAudioViewController.h; sourceTree = "<group>"; };
+		58FC443C21B132C50094E02C /* JPVideoPlayerHoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerHoverViewController.h; sourceTree = "<group>"; };
+		58FC443D21B132C50094E02C /* JPVideoPlayerWeiBoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerWeiBoListViewController.m; sourceTree = "<group>"; };
+		58FC443E21B132C50094E02C /* JPVideoPlayerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerDetailViewController.h; sourceTree = "<group>"; };
+		58FC443F21B132C50094E02C /* JPVideoPlayerWeiBoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerWeiBoViewController.h; sourceTree = "<group>"; };
+		58FC444021B132C50094E02C /* JPVideoPlayerWeiBoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerWeiBoViewController.m; sourceTree = "<group>"; };
+		58FC444121B132C50094E02C /* JPVideoPlayerWeiBoEqualHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerWeiBoEqualHeightCell.m; sourceTree = "<group>"; };
+		58FC444221B132C60094E02C /* JPVideoPlayerDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerDetailViewController.xib; sourceTree = "<group>"; };
+		58FC444321B132C60094E02C /* JPVideoPlayerAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerAudioViewController.m; sourceTree = "<group>"; };
+		58FC444421B132C60094E02C /* JPVideoPlayerHoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerHoverViewController.m; sourceTree = "<group>"; };
+		58FC444521B132C60094E02C /* JPVideoPlayerWeiBoEqualHeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerWeiBoEqualHeightCell.xib; sourceTree = "<group>"; };
+		58FC444621B132C60094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerWeiBoUnequalHeightCell.h; sourceTree = "<group>"; };
+		58FC444721B132C60094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerWeiBoUnequalHeightCell.m; sourceTree = "<group>"; };
+		58FC444821B132C60094E02C /* JPVideoPlayerAudioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPVideoPlayerAudioViewController.xib; sourceTree = "<group>"; };
+		58FC444921B132C60094E02C /* JPVideoPlayerWeiBoEqualHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerWeiBoEqualHeightCell.h; sourceTree = "<group>"; };
+		58FC444A21B132C70094E02C /* JPVideoPlayerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerDetailViewController.m; sourceTree = "<group>"; };
+		58FC445621B132DC0094E02C /* JPVideoPlayerDouyinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerDouyinViewController.h; sourceTree = "<group>"; };
+		58FC445721B132DC0094E02C /* JPVideoPlayerDouyinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerDouyinViewController.m; sourceTree = "<group>"; };
+		58FC445921B137480094E02C /* designedByAppleInCalifornia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = designedByAppleInCalifornia.mp4; sourceTree = "<group>"; };
+		A66CB56F1C5055B3C0756781 /* Pods-SRVideoPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRVideoPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRVideoPlayerDemo/Pods-SRVideoPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +87,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2299E4DD467C5B29F60D022C /* libPods-SRVideoPlayerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		378F3D3950B0137815B3DE9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BA0CF224BAE4761E96064D9 /* Pods-SRVideoPlayerDemo.debug.xcconfig */,
+				A66CB56F1C5055B3C0756781 /* Pods-SRVideoPlayerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4328F4DE52CEB8CF58571F31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0701BA2480A33C12512C4EBE /* libPods-SRVideoPlayerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58FC440321B130F20094E02C = {
 			isa = PBXGroup;
 			children = (
 				58FC440E21B130F20094E02C /* SRVideoPlayerDemo */,
 				58FC440D21B130F20094E02C /* Products */,
+				378F3D3950B0137815B3DE9F /* Pods */,
+				4328F4DE52CEB8CF58571F31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +132,10 @@
 		58FC440E21B130F20094E02C /* SRVideoPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				58FC443021B132870094E02C /* Setting */,
+				58FC442F21B132730094E02C /* Weibo */,
+				58FC442E21B132680094E02C /* Douyin */,
+				58FC442521B1325B0094E02C /* NetEasy */,
 				58FC440F21B130F20094E02C /* AppDelegate.h */,
 				58FC441021B130F20094E02C /* AppDelegate.m */,
 				58FC441221B130F20094E02C /* ViewController.h */,
@@ -67,8 +145,67 @@
 				58FC441A21B130F40094E02C /* LaunchScreen.storyboard */,
 				58FC441D21B130F40094E02C /* Info.plist */,
 				58FC441E21B130F40094E02C /* main.m */,
+				58FC445921B137480094E02C /* designedByAppleInCalifornia.mp4 */,
 			);
 			path = SRVideoPlayerDemo;
+			sourceTree = "<group>";
+		};
+		58FC442521B1325B0094E02C /* NetEasy */ = {
+			isa = PBXGroup;
+			children = (
+				58FC442821B1325B0094E02C /* JPVPNetEasyTableViewCell.h */,
+				58FC442621B1325B0094E02C /* JPVPNetEasyTableViewCell.m */,
+				58FC442921B1325B0094E02C /* JPVPNetEasyTableViewCell.xib */,
+				58FC442721B1325B0094E02C /* JPVPNetEasyViewController.h */,
+				58FC442A21B1325B0094E02C /* JPVPNetEasyViewController.m */,
+			);
+			path = NetEasy;
+			sourceTree = "<group>";
+		};
+		58FC442E21B132680094E02C /* Douyin */ = {
+			isa = PBXGroup;
+			children = (
+				58FC445621B132DC0094E02C /* JPVideoPlayerDouyinViewController.h */,
+				58FC445721B132DC0094E02C /* JPVideoPlayerDouyinViewController.m */,
+			);
+			path = Douyin;
+			sourceTree = "<group>";
+		};
+		58FC442F21B132730094E02C /* Weibo */ = {
+			isa = PBXGroup;
+			children = (
+				58FC443B21B132C50094E02C /* JPVideoPlayerAudioViewController.h */,
+				58FC444321B132C60094E02C /* JPVideoPlayerAudioViewController.m */,
+				58FC444821B132C60094E02C /* JPVideoPlayerAudioViewController.xib */,
+				58FC443E21B132C50094E02C /* JPVideoPlayerDetailViewController.h */,
+				58FC444A21B132C70094E02C /* JPVideoPlayerDetailViewController.m */,
+				58FC444221B132C60094E02C /* JPVideoPlayerDetailViewController.xib */,
+				58FC443C21B132C50094E02C /* JPVideoPlayerHoverViewController.h */,
+				58FC444421B132C60094E02C /* JPVideoPlayerHoverViewController.m */,
+				58FC444921B132C60094E02C /* JPVideoPlayerWeiBoEqualHeightCell.h */,
+				58FC444121B132C50094E02C /* JPVideoPlayerWeiBoEqualHeightCell.m */,
+				58FC444521B132C60094E02C /* JPVideoPlayerWeiBoEqualHeightCell.xib */,
+				58FC443921B132C40094E02C /* JPVideoPlayerWeiBoListViewController.h */,
+				58FC443D21B132C50094E02C /* JPVideoPlayerWeiBoListViewController.m */,
+				58FC444621B132C60094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.h */,
+				58FC444721B132C60094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.m */,
+				58FC443A21B132C50094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.xib */,
+				58FC443F21B132C50094E02C /* JPVideoPlayerWeiBoViewController.h */,
+				58FC444021B132C50094E02C /* JPVideoPlayerWeiBoViewController.m */,
+			);
+			path = Weibo;
+			sourceTree = "<group>";
+		};
+		58FC443021B132870094E02C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				58FC443321B132A60094E02C /* JPVideoPlayerSettingViewController.h */,
+				58FC443121B132A60094E02C /* JPVideoPlayerSettingViewController.m */,
+				58FC443221B132A60094E02C /* JPVideoPlayerSettingViewController.xib */,
+				58FC443621B132B00094E02C /* JPQRCodeTool.h */,
+				58FC443721B132B00094E02C /* JPQRCodeTool.m */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58FC442221B130F40094E02C /* Build configuration list for PBXNativeTarget "SRVideoPlayerDemo" */;
 			buildPhases = (
+				E72716A4BE9D1F88E8ABF3F4 /* [CP] Check Pods Manifest.lock */,
 				58FC440821B130F20094E02C /* Sources */,
 				58FC440921B130F20094E02C /* Frameworks */,
 				58FC440A21B130F20094E02C /* Resources */,
+				C29FE88C44454FE0535C4DDE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,22 +267,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58FC444B21B132C70094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.xib in Resources */,
+				58FC445A21B137480094E02C /* designedByAppleInCalifornia.mp4 in Resources */,
 				58FC441C21B130F40094E02C /* LaunchScreen.storyboard in Resources */,
+				58FC444F21B132C70094E02C /* JPVideoPlayerDetailViewController.xib in Resources */,
+				58FC445221B132C70094E02C /* JPVideoPlayerWeiBoEqualHeightCell.xib in Resources */,
+				58FC442C21B1325C0094E02C /* JPVPNetEasyTableViewCell.xib in Resources */,
 				58FC441921B130F40094E02C /* Assets.xcassets in Resources */,
+				58FC443521B132A60094E02C /* JPVideoPlayerSettingViewController.xib in Resources */,
+				58FC445421B132C70094E02C /* JPVideoPlayerAudioViewController.xib in Resources */,
 				58FC441721B130F20094E02C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C29FE88C44454FE0535C4DDE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SRVideoPlayerDemo/Pods-SRVideoPlayerDemo-resources.sh",
+				"${PODS_ROOT}/JPNavigationController/JPNavigationController/JPNavigationController.bundle",
+				"${PODS_ROOT}/JPVideoPlayer/JPVideoPlayer/JPVideoPlayer.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JPNavigationController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JPVideoPlayer.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SRVideoPlayerDemo/Pods-SRVideoPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E72716A4BE9D1F88E8ABF3F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SRVideoPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58FC440821B130F20094E02C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58FC444C21B132C70094E02C /* JPVideoPlayerWeiBoListViewController.m in Sources */,
 				58FC441421B130F20094E02C /* ViewController.m in Sources */,
+				58FC445821B132DC0094E02C /* JPVideoPlayerDouyinViewController.m in Sources */,
+				58FC443821B132B00094E02C /* JPQRCodeTool.m in Sources */,
+				58FC442D21B1325C0094E02C /* JPVPNetEasyViewController.m in Sources */,
+				58FC444D21B132C70094E02C /* JPVideoPlayerWeiBoViewController.m in Sources */,
+				58FC443421B132A60094E02C /* JPVideoPlayerSettingViewController.m in Sources */,
+				58FC445121B132C70094E02C /* JPVideoPlayerHoverViewController.m in Sources */,
+				58FC442B21B1325C0094E02C /* JPVPNetEasyTableViewCell.m in Sources */,
+				58FC445521B132C70094E02C /* JPVideoPlayerDetailViewController.m in Sources */,
+				58FC445321B132C70094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.m in Sources */,
 				58FC441F21B130F40094E02C /* main.m in Sources */,
 				58FC441121B130F20094E02C /* AppDelegate.m in Sources */,
+				58FC445021B132C70094E02C /* JPVideoPlayerAudioViewController.m in Sources */,
+				58FC444E21B132C70094E02C /* JPVideoPlayerWeiBoEqualHeightCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +490,11 @@
 		};
 		58FC442321B130F40094E02C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA0CF224BAE4761E96064D9 /* Pods-SRVideoPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6YL76F8NTC;
 				INFOPLIST_FILE = SRVideoPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +508,11 @@
 		};
 		58FC442421B130F40094E02C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66CB56F1C5055B3C0756781 /* Pods-SRVideoPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6YL76F8NTC;
 				INFOPLIST_FILE = SRVideoPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

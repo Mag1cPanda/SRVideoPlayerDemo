@@ -1,0 +1,24 @@
+PODS:
+  - JPNavigationController (2.1.3)
+  - JPVideoPlayer (3.1.1)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - JPNavigationController
+  - JPVideoPlayer
+  - Masonry
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JPNavigationController
+    - JPVideoPlayer
+    - Masonry
+
+SPEC CHECKSUMS:
+  JPNavigationController: f174edc3572edd9cd60cc65b51a14b6d75e47e9a
+  JPVideoPlayer: 234c2fc5c9dfd67b969a5dd8233815eb872472c6
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 7dcae3546ef1fea2828cab7dabe18d5a396ca840
+
+COCOAPODS: 1.5.3

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OOx-Lu-XAJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,79 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4K-Nx-zG9">
+                                <rect key="frame" x="157.5" y="350.5" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="42g-b3-AsU"/>
+                                    <constraint firstAttribute="width" constant="60" id="Oax-Vl-3cH"/>
+                                </constraints>
+                                <state key="normal" title="抖音"/>
+                                <connections>
+                                    <action selector="douyin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IeK-5y-YH7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uo4-ys-zHU">
+                                <rect key="frame" x="157.5" y="430.5" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="T4R-bE-Zqk"/>
+                                    <constraint firstAttribute="width" constant="60" id="cTg-0R-ksR"/>
+                                </constraints>
+                                <state key="normal" title="网易"/>
+                                <connections>
+                                    <action selector="wangyi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyb-Mx-cPc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzn-kd-erh">
+                                <rect key="frame" x="157.5" y="270.5" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Wky-sR-KYd"/>
+                                    <constraint firstAttribute="height" constant="30" id="tuw-Q0-mxr"/>
+                                </constraints>
+                                <state key="normal" title="微博"/>
+                                <connections>
+                                    <action selector="weibo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2y-BC-fWQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e4K-Nx-zG9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="7X9-WC-Nxs"/>
+                            <constraint firstItem="e4K-Nx-zG9" firstAttribute="top" secondItem="Mzn-kd-erh" secondAttribute="bottom" constant="50" id="9lD-Sv-58A"/>
+                            <constraint firstItem="e4K-Nx-zG9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PQw-7T-Ff1"/>
+                            <constraint firstItem="Uo4-ys-zHU" firstAttribute="top" secondItem="e4K-Nx-zG9" secondAttribute="bottom" constant="50" id="d0b-bH-d6r"/>
+                            <constraint firstItem="Uo4-ys-zHU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d4z-Go-xAR"/>
+                            <constraint firstItem="Mzn-kd-erh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u16-OV-4xf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xtb-aQ-lfS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1033" y="71"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HCE-h7-8kp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OOx-Lu-XAJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NIL-ce-DP3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fs7-t1-F4q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IoO-5B-7Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="95"/>
         </scene>
     </scenes>
 </document>
