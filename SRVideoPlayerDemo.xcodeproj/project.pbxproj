@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2299E4DD467C5B29F60D022C /* libPods-SRVideoPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0701BA2480A33C12512C4EBE /* libPods-SRVideoPlayerDemo.a */; };
+		5859196921EC8F8800CAC864 /* SRFullScreenVideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859196821EC8F8800CAC864 /* SRFullScreenVideoVC.m */; };
+		5859198421EC90A200CAC864 /* ZFUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859196B21EC90A200CAC864 /* ZFUtilities.m */; };
+		5859198521EC90A200CAC864 /* UIView+ZFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859196C21EC90A200CAC864 /* UIView+ZFFrame.m */; };
+		5859198621EC90A200CAC864 /* ZFVolumeBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859197021EC90A200CAC864 /* ZFVolumeBrightnessView.m */; };
+		5859198721EC90A200CAC864 /* ZFLandScapeControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859197321EC90A200CAC864 /* ZFLandScapeControlView.m */; };
+		5859198821EC90A200CAC864 /* ZFNetworkSpeedMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859197421EC90A200CAC864 /* ZFNetworkSpeedMonitor.m */; };
+		5859198921EC90A200CAC864 /* ZFPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5859197721EC90A200CAC864 /* ZFPlayer.bundle */; };
+		5859198A21EC90A200CAC864 /* ZFSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859197A21EC90A200CAC864 /* ZFSliderView.m */; };
+		5859198B21EC90A200CAC864 /* ZFPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859197B21EC90A200CAC864 /* ZFPlayerControlView.m */; };
+		5859198C21EC90A200CAC864 /* ZFSmallFloatControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859197C21EC90A200CAC864 /* ZFSmallFloatControlView.m */; };
+		5859198D21EC90A200CAC864 /* ZFLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859197D21EC90A200CAC864 /* ZFLoadingView.m */; };
+		5859198E21EC90A200CAC864 /* ZFSpeedLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859197E21EC90A200CAC864 /* ZFSpeedLoadingView.m */; };
+		5859198F21EC90A200CAC864 /* ZFPortraitControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859198021EC90A200CAC864 /* ZFPortraitControlView.m */; };
+		5859199021EC90A200CAC864 /* UIImageView+ZFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5859198121EC90A200CAC864 /* UIImageView+ZFCache.m */; };
 		58FC441121B130F20094E02C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441021B130F20094E02C /* AppDelegate.m */; };
 		58FC441421B130F20094E02C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441321B130F20094E02C /* ViewController.m */; };
 		58FC441721B130F20094E02C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FC441521B130F20094E02C /* Main.storyboard */; };
@@ -38,6 +52,33 @@
 /* Begin PBXFileReference section */
 		0701BA2480A33C12512C4EBE /* libPods-SRVideoPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRVideoPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BA0CF224BAE4761E96064D9 /* Pods-SRVideoPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRVideoPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRVideoPlayerDemo/Pods-SRVideoPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5859196721EC8F8800CAC864 /* SRFullScreenVideoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRFullScreenVideoVC.h; sourceTree = "<group>"; };
+		5859196821EC8F8800CAC864 /* SRFullScreenVideoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRFullScreenVideoVC.m; sourceTree = "<group>"; };
+		5859196B21EC90A200CAC864 /* ZFUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFUtilities.m; sourceTree = "<group>"; };
+		5859196C21EC90A200CAC864 /* UIView+ZFFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZFFrame.m"; sourceTree = "<group>"; };
+		5859196D21EC90A200CAC864 /* ZFSmallFloatControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSmallFloatControlView.h; sourceTree = "<group>"; };
+		5859196E21EC90A200CAC864 /* ZFPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPlayerControlView.h; sourceTree = "<group>"; };
+		5859196F21EC90A200CAC864 /* ZFSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSliderView.h; sourceTree = "<group>"; };
+		5859197021EC90A200CAC864 /* ZFVolumeBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFVolumeBrightnessView.m; sourceTree = "<group>"; };
+		5859197121EC90A200CAC864 /* ZFSpeedLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSpeedLoadingView.h; sourceTree = "<group>"; };
+		5859197221EC90A200CAC864 /* ZFLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLoadingView.h; sourceTree = "<group>"; };
+		5859197321EC90A200CAC864 /* ZFLandScapeControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLandScapeControlView.m; sourceTree = "<group>"; };
+		5859197421EC90A200CAC864 /* ZFNetworkSpeedMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFNetworkSpeedMonitor.m; sourceTree = "<group>"; };
+		5859197521EC90A200CAC864 /* UIImageView+ZFCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZFCache.h"; sourceTree = "<group>"; };
+		5859197621EC90A200CAC864 /* ZFPortraitControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPortraitControlView.h; sourceTree = "<group>"; };
+		5859197721EC90A200CAC864 /* ZFPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZFPlayer.bundle; sourceTree = "<group>"; };
+		5859197821EC90A200CAC864 /* UIView+ZFFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZFFrame.h"; sourceTree = "<group>"; };
+		5859197921EC90A200CAC864 /* ZFUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFUtilities.h; sourceTree = "<group>"; };
+		5859197A21EC90A200CAC864 /* ZFSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSliderView.m; sourceTree = "<group>"; };
+		5859197B21EC90A200CAC864 /* ZFPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerControlView.m; sourceTree = "<group>"; };
+		5859197C21EC90A200CAC864 /* ZFSmallFloatControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSmallFloatControlView.m; sourceTree = "<group>"; };
+		5859197D21EC90A200CAC864 /* ZFLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLoadingView.m; sourceTree = "<group>"; };
+		5859197E21EC90A200CAC864 /* ZFSpeedLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSpeedLoadingView.m; sourceTree = "<group>"; };
+		5859197F21EC90A200CAC864 /* ZFVolumeBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFVolumeBrightnessView.h; sourceTree = "<group>"; };
+		5859198021EC90A200CAC864 /* ZFPortraitControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPortraitControlView.m; sourceTree = "<group>"; };
+		5859198121EC90A200CAC864 /* UIImageView+ZFCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZFCache.m"; sourceTree = "<group>"; };
+		5859198221EC90A200CAC864 /* ZFNetworkSpeedMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFNetworkSpeedMonitor.h; sourceTree = "<group>"; };
+		5859198321EC90A200CAC864 /* ZFLandScapeControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLandScapeControlView.h; sourceTree = "<group>"; };
 		58FC440C21B130F20094E02C /* SRVideoPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRVideoPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FC440F21B130F20094E02C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58FC441021B130F20094E02C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +152,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5859196A21EC90A200CAC864 /* ControlView */ = {
+			isa = PBXGroup;
+			children = (
+				5859197521EC90A200CAC864 /* UIImageView+ZFCache.h */,
+				5859198121EC90A200CAC864 /* UIImageView+ZFCache.m */,
+				5859197821EC90A200CAC864 /* UIView+ZFFrame.h */,
+				5859196C21EC90A200CAC864 /* UIView+ZFFrame.m */,
+				5859198321EC90A200CAC864 /* ZFLandScapeControlView.h */,
+				5859197321EC90A200CAC864 /* ZFLandScapeControlView.m */,
+				5859197221EC90A200CAC864 /* ZFLoadingView.h */,
+				5859197D21EC90A200CAC864 /* ZFLoadingView.m */,
+				5859198221EC90A200CAC864 /* ZFNetworkSpeedMonitor.h */,
+				5859197421EC90A200CAC864 /* ZFNetworkSpeedMonitor.m */,
+				5859197721EC90A200CAC864 /* ZFPlayer.bundle */,
+				5859196E21EC90A200CAC864 /* ZFPlayerControlView.h */,
+				5859197B21EC90A200CAC864 /* ZFPlayerControlView.m */,
+				5859197621EC90A200CAC864 /* ZFPortraitControlView.h */,
+				5859198021EC90A200CAC864 /* ZFPortraitControlView.m */,
+				5859196F21EC90A200CAC864 /* ZFSliderView.h */,
+				5859197A21EC90A200CAC864 /* ZFSliderView.m */,
+				5859196D21EC90A200CAC864 /* ZFSmallFloatControlView.h */,
+				5859197C21EC90A200CAC864 /* ZFSmallFloatControlView.m */,
+				5859197121EC90A200CAC864 /* ZFSpeedLoadingView.h */,
+				5859197E21EC90A200CAC864 /* ZFSpeedLoadingView.m */,
+				5859197921EC90A200CAC864 /* ZFUtilities.h */,
+				5859196B21EC90A200CAC864 /* ZFUtilities.m */,
+				5859197F21EC90A200CAC864 /* ZFVolumeBrightnessView.h */,
+				5859197021EC90A200CAC864 /* ZFVolumeBrightnessView.m */,
+			);
+			path = ControlView;
+			sourceTree = "<group>";
+		};
 		58FC440321B130F20094E02C = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +205,7 @@
 		58FC440E21B130F20094E02C /* SRVideoPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5859196A21EC90A200CAC864 /* ControlView */,
 				58FC443021B132870094E02C /* Setting */,
 				58FC442F21B132730094E02C /* Weibo */,
 				58FC442E21B132680094E02C /* Douyin */,
@@ -140,6 +214,8 @@
 				58FC441021B130F20094E02C /* AppDelegate.m */,
 				58FC441221B130F20094E02C /* ViewController.h */,
 				58FC441321B130F20094E02C /* ViewController.m */,
+				5859196721EC8F8800CAC864 /* SRFullScreenVideoVC.h */,
+				5859196821EC8F8800CAC864 /* SRFullScreenVideoVC.m */,
 				58FC441521B130F20094E02C /* Main.storyboard */,
 				58FC441821B130F40094E02C /* Assets.xcassets */,
 				58FC441A21B130F40094E02C /* LaunchScreen.storyboard */,
@@ -277,6 +353,7 @@
 				58FC443521B132A60094E02C /* JPVideoPlayerSettingViewController.xib in Resources */,
 				58FC445421B132C70094E02C /* JPVideoPlayerAudioViewController.xib in Resources */,
 				58FC441721B130F20094E02C /* Main.storyboard in Resources */,
+				5859198921EC90A200CAC864 /* ZFPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,20 +414,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				58FC444C21B132C70094E02C /* JPVideoPlayerWeiBoListViewController.m in Sources */,
+				5859198D21EC90A200CAC864 /* ZFLoadingView.m in Sources */,
 				58FC441421B130F20094E02C /* ViewController.m in Sources */,
 				58FC445821B132DC0094E02C /* JPVideoPlayerDouyinViewController.m in Sources */,
+				5859198A21EC90A200CAC864 /* ZFSliderView.m in Sources */,
 				58FC443821B132B00094E02C /* JPQRCodeTool.m in Sources */,
+				5859198521EC90A200CAC864 /* UIView+ZFFrame.m in Sources */,
+				5859199021EC90A200CAC864 /* UIImageView+ZFCache.m in Sources */,
 				58FC442D21B1325C0094E02C /* JPVPNetEasyViewController.m in Sources */,
+				5859198B21EC90A200CAC864 /* ZFPlayerControlView.m in Sources */,
 				58FC444D21B132C70094E02C /* JPVideoPlayerWeiBoViewController.m in Sources */,
 				58FC443421B132A60094E02C /* JPVideoPlayerSettingViewController.m in Sources */,
 				58FC445121B132C70094E02C /* JPVideoPlayerHoverViewController.m in Sources */,
+				5859196921EC8F8800CAC864 /* SRFullScreenVideoVC.m in Sources */,
 				58FC442B21B1325C0094E02C /* JPVPNetEasyTableViewCell.m in Sources */,
+				5859198621EC90A200CAC864 /* ZFVolumeBrightnessView.m in Sources */,
 				58FC445521B132C70094E02C /* JPVideoPlayerDetailViewController.m in Sources */,
+				5859198C21EC90A200CAC864 /* ZFSmallFloatControlView.m in Sources */,
 				58FC445321B132C70094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.m in Sources */,
 				58FC441F21B130F40094E02C /* main.m in Sources */,
 				58FC441121B130F20094E02C /* AppDelegate.m in Sources */,
 				58FC445021B132C70094E02C /* JPVideoPlayerAudioViewController.m in Sources */,
+				5859198F21EC90A200CAC864 /* ZFPortraitControlView.m in Sources */,
+				5859198E21EC90A200CAC864 /* ZFSpeedLoadingView.m in Sources */,
 				58FC444E21B132C70094E02C /* JPVideoPlayerWeiBoEqualHeightCell.m in Sources */,
+				5859198821EC90A200CAC864 /* ZFNetworkSpeedMonitor.m in Sources */,
+				5859198721EC90A200CAC864 /* ZFLandScapeControlView.m in Sources */,
+				5859198421EC90A200CAC864 /* ZFUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

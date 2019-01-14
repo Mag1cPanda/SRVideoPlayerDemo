@@ -1,24 +1,45 @@
 PODS:
+  - CocoaAsyncSocket (7.6.3)
   - JPNavigationController (2.1.3)
   - JPVideoPlayer (3.1.1)
+  - KTVCocoaHTTPServer (1.0.0):
+    - CocoaAsyncSocket
+  - KTVHTTPCache (1.1.7):
+    - KTVCocoaHTTPServer
   - Masonry (1.1.0)
+  - ZFPlayer (3.2.2):
+    - ZFPlayer/Core (= 3.2.2)
+  - ZFPlayer/AVPlayer (3.2.2):
+    - ZFPlayer/Core
+  - ZFPlayer/Core (3.2.2)
 
 DEPENDENCIES:
   - JPNavigationController
   - JPVideoPlayer
+  - KTVHTTPCache (~> 1.1.7)
   - Masonry
+  - ZFPlayer (~> 3.0)
+  - ZFPlayer/AVPlayer (~> 3.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
     - JPNavigationController
     - JPVideoPlayer
+    - KTVCocoaHTTPServer
+    - KTVHTTPCache
     - Masonry
+    - ZFPlayer
 
 SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   JPNavigationController: f174edc3572edd9cd60cc65b51a14b6d75e47e9a
   JPVideoPlayer: 234c2fc5c9dfd67b969a5dd8233815eb872472c6
+  KTVCocoaHTTPServer: df8d7b861e603ff8037e9b2138aca2563a6b768d
+  KTVHTTPCache: 5c4c0544afe4007f620879d7f6a0455ee1c02d36
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ZFPlayer: 8547effaab9e2764c2e9f72ecf32530d6bd96165
 
-PODFILE CHECKSUM: 7dcae3546ef1fea2828cab7dabe18d5a396ca840
+PODFILE CHECKSUM: f4dca9f770b8eee1a218ffbdf4cadc7f459fb144
 
 COCOAPODS: 1.5.3
