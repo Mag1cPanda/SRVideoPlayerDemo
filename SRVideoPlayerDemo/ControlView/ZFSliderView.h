@@ -64,9 +64,11 @@
 @property (nonatomic, assign) float value;
 /** 缓存进度 */
 @property (nonatomic, assign) float bufferValue;
-/** 是否允许点击，默认是YES */
+/** 进度条是否允许点击，默认YES */
 @property (nonatomic, assign) BOOL allowTapped;
-/** 是否允许点击，默认是YES */
+/** 滑块是否允许拖动，默认YES */
+//@property (nonatomic, assign) BOOL slideEnabled;
+/** 滑块动画效果 默认YES */
 @property (nonatomic, assign) BOOL animate;
 /** 设置滑杆的高度 */
 @property (nonatomic, assign) CGFloat sliderHeight;

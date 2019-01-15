@@ -55,8 +55,18 @@
 @property (nonatomic, assign) BOOL fastViewAnimated;
 /// 直接进入全屏模式，只支持全屏模式
 @property (nonatomic, assign) BOOL fullScreenOnly;
+/// 如果是暂停状态，seek完是否播放，默认YES
+@property (nonatomic, assign) BOOL seekToPlay;
 /// 返回按钮点击回调
 @property (nonatomic, copy) void(^backBtnClickCallback)(void);
+/// 控制层显示或者隐藏
+@property (nonatomic, readonly) BOOL controlViewAppeared;
+/// 控制层显示或者隐藏的回调
+@property (nonatomic, copy) void(^controlViewAppearedCallback)(BOOL appeared);
+/// 控制层自动隐藏的时间，默认2.5秒
+@property (nonatomic, assign) NSTimeInterval autoHiddenTimeInterval;
+/// 控制层显示、隐藏动画的时长，默认0.25秒
+@property (nonatomic, assign) NSTimeInterval autoFadeTimeInterval;
 
 /// 设置标题、封面、全屏模式
 - (void)showTitle:(NSString *)title coverURLString:(NSString *)coverUrl fullScreenMode:(ZFFullScreenMode)fullScreenMode;
