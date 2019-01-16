@@ -59,8 +59,8 @@
         NSURL *fileURL = [NSURL URLWithString:URLStr];
         self.playerManager.assetURL = fileURL;
     }
-
     
+    NSLog(@"%@",self.player.assetURL);
     //本地视频
 //    NSString *path = [[NSBundle mainBundle] pathForResource:@"designedByAppleInCalifornia" ofType:@"mp4"];
 //    NSURL *fileURL = [NSURL fileURLWithPath:path];
@@ -78,6 +78,24 @@
 //    NSURLSessionDownloadTask *downloadTask = [self.session downloadTaskWithRequest:request];
 //    [downloadTask resume];
 //    self.downloadTask = downloadTask;
+    
+//    self.playerManager.playerPlayStateChanged = ^(id<ZFPlayerMediaPlayback>  _Nonnull asset, ZFPlayerPlaybackState playState) {
+//        NSLog(@"%lu",(unsigned long)playState);
+//    };
+    
+    
+    self.player.playerPlayTimeChanged = ^(id<ZFPlayerMediaPlayback>  _Nonnull asset, NSTimeInterval currentTime, NSTimeInterval duration) {
+        NSLog(@"%f/%f",currentTime,duration);
+        if (currentTime == duration) {
+            
+            UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+            lbl.center = weak_self.controlView.center;
+            lbl.text = @"学习完成";
+            lbl.backgroundColor = [UIColor redColor];
+            [weak_self.controlView addSubview:lbl];
+            
+        }
+    };
     
 }
 
@@ -140,7 +158,14 @@
 -(void)setAssetURL:(NSString *)assetURL
 {
     _assetURL = assetURL;
-    self.player.assetURL = [NSURL URLWithString:assetURL];
+    
+    //网络地址和本地地址
+    if ([assetURL hasPrefix:@"http"]) {
+        self.player.assetURL = [NSURL URLWithString:assetURL];
+    } else {
+        self.player.assetURL = [NSURL fileURLWithPath:assetURL];
+    }
+    
 }
 
 #pragma mark - Lazy

@@ -47,6 +47,9 @@
 /// 锁定屏幕按钮
 @property (nonatomic, strong) UIButton *lockBtn;
 
+//目录按钮
+@property (nonatomic, strong) UIButton *catalogBtn;
+
 @property (nonatomic, assign) BOOL isShow;
 
 @end
