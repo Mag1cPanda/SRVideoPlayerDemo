@@ -36,21 +36,21 @@
     path = [path stringByAppendingPathComponent:@"download"];
     YCDConfig *config = [YCDConfig new];
     config.saveRootPath = path;
-    config.uid = @"100006";
+    config.uid = @"100006";//userId
     config.maxTaskCount = 3;
     config.taskCachekMode = YCDownloadTaskCacheModeKeep;
     config.launchAutoResumeDownload = true;
     [YCDownloadManager mgrWithConfig:config];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadTaskFinishedNoti:) name:kDownloadTaskFinishedNoti object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadAllTaskFinished) name:kDownloadTaskAllFinishedNoti object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadAllTaskFinished) name:kDownloadTaskAllFinishedNoti object:nil];
 }
 
 #pragma mark notificaton
 
-- (void)downloadAllTaskFinished{
-    [self localPushWithTitle:@"YCDownloadSession" detail:@"所有的下载任务已完成！"];
-}
+//- (void)downloadAllTaskFinished{
+//    [self localPushWithTitle:@"YCDownloadSession" detail:@"所有的下载任务已完成！"];
+//}
 
 - (void)downloadTaskFinishedNoti:(NSNotification *)noti{
     YCDownloadItem *item = noti.object;

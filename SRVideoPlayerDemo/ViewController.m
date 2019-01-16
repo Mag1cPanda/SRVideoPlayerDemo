@@ -12,6 +12,7 @@
 #import "JPVideoPlayerDouyinViewController.h"
 #import "JPVPNetEasyViewController.h"
 #import "SRFullScreenVideoVC.h"
+#import "SRSourceListVC.h"
 
 @interface ViewController ()
 <UITableViewDelegate,UITableViewDataSource>
@@ -26,6 +27,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    //设置为BarButtonItem时，只要设置了title，不给frame也能显示
+    rightBtn.frame = CGRectMake(0, 0, 44, 44);
+    [rightBtn setTitle:@"资源列表" forState:0];
+    [rightBtn setTitleColor:[UIColor blackColor] forState:0];
+    rightBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [rightBtn addTarget:self action:@selector(jumpToSourcelist) forControlEvents:1<<6];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    
     self.table = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.table.delegate = self;
     self.table.dataSource = self;
@@ -38,6 +49,12 @@
                    @"SRFullScreenVideoVC"];
     
     self.titleArr = @[@"微博",@"抖音",@"网易",@"全屏"];
+}
+
+- (void)jumpToSourcelist
+{
+    SRSourceListVC *vc = [SRSourceListVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -59,7 +76,7 @@
     
     UIViewController *vc = [NSClassFromString(classStr) new];
     
-    BOOL animated = [classStr isEqualToString:@"SRFullScreenVideoVC"];
+    BOOL animated = ![classStr isEqualToString:@"SRFullScreenVideoVC"];
     
     [self.navigationController pushViewController:vc animated:animated];
 }

@@ -29,6 +29,11 @@
 		585919D221EDF14700CAC864 /* YCDownloadUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919CA21EDF14700CAC864 /* YCDownloadUtils.m */; };
 		585919D321EDF14700CAC864 /* YCDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919CC21EDF14700CAC864 /* YCDownloadTask.m */; };
 		585919D421EDF14700CAC864 /* YCDownloadItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919CE21EDF14700CAC864 /* YCDownloadItem.m */; };
+		585919D821EEC60400CAC864 /* SRDownloadVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919D721EEC60400CAC864 /* SRDownloadVC.m */; };
+		585919DB21EECD1500CAC864 /* SRSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919DA21EECD1500CAC864 /* SRSettingVC.m */; };
+		585919DE21EED3A800CAC864 /* SRSourceListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919DD21EED3A800CAC864 /* SRSourceListVC.m */; };
+		585919E521EEE2AE00CAC864 /* SRDownLoadListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919E321EEE2AE00CAC864 /* SRDownLoadListCell.m */; };
+		585919E621EEE2AE00CAC864 /* SRDownLoadListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585919E421EEE2AE00CAC864 /* SRDownLoadListCell.xib */; };
 		58FC441121B130F20094E02C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441021B130F20094E02C /* AppDelegate.m */; };
 		58FC441421B130F20094E02C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441321B130F20094E02C /* ViewController.m */; };
 		58FC441721B130F20094E02C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FC441521B130F20094E02C /* Main.storyboard */; };
@@ -101,6 +106,15 @@
 		585919CC21EDF14700CAC864 /* YCDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDownloadTask.m; sourceTree = "<group>"; };
 		585919CD21EDF14700CAC864 /* YCDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCDownloadManager.h; sourceTree = "<group>"; };
 		585919CE21EDF14700CAC864 /* YCDownloadItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCDownloadItem.m; sourceTree = "<group>"; };
+		585919D621EEC60400CAC864 /* SRDownloadVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRDownloadVC.h; sourceTree = "<group>"; };
+		585919D721EEC60400CAC864 /* SRDownloadVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRDownloadVC.m; sourceTree = "<group>"; };
+		585919D921EECD1500CAC864 /* SRSettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRSettingVC.h; sourceTree = "<group>"; };
+		585919DA21EECD1500CAC864 /* SRSettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRSettingVC.m; sourceTree = "<group>"; };
+		585919DC21EED3A800CAC864 /* SRSourceListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRSourceListVC.h; sourceTree = "<group>"; };
+		585919DD21EED3A800CAC864 /* SRSourceListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRSourceListVC.m; sourceTree = "<group>"; };
+		585919E221EEE2AD00CAC864 /* SRDownLoadListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRDownLoadListCell.h; sourceTree = "<group>"; };
+		585919E321EEE2AE00CAC864 /* SRDownLoadListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRDownLoadListCell.m; sourceTree = "<group>"; };
+		585919E421EEE2AE00CAC864 /* SRDownLoadListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SRDownLoadListCell.xib; sourceTree = "<group>"; };
 		58FC440C21B130F20094E02C /* SRVideoPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRVideoPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FC440F21B130F20094E02C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58FC441021B130F20094E02C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -273,6 +287,15 @@
 				58FC441321B130F20094E02C /* ViewController.m */,
 				5859196721EC8F8800CAC864 /* SRFullScreenVideoVC.h */,
 				5859196821EC8F8800CAC864 /* SRFullScreenVideoVC.m */,
+				585919DC21EED3A800CAC864 /* SRSourceListVC.h */,
+				585919DD21EED3A800CAC864 /* SRSourceListVC.m */,
+				585919D621EEC60400CAC864 /* SRDownloadVC.h */,
+				585919D721EEC60400CAC864 /* SRDownloadVC.m */,
+				585919E221EEE2AD00CAC864 /* SRDownLoadListCell.h */,
+				585919E321EEE2AE00CAC864 /* SRDownLoadListCell.m */,
+				585919E421EEE2AE00CAC864 /* SRDownLoadListCell.xib */,
+				585919D921EECD1500CAC864 /* SRSettingVC.h */,
+				585919DA21EECD1500CAC864 /* SRSettingVC.m */,
 				585919BB21EDE64300CAC864 /* SRFileManger.h */,
 				585919BC21EDE64300CAC864 /* SRFileManger.m */,
 				585919BE21EDEA4000CAC864 /* SRDownloadManager.h */,
@@ -412,6 +435,7 @@
 				58FC442C21B1325C0094E02C /* JPVPNetEasyTableViewCell.xib in Resources */,
 				58FC441921B130F40094E02C /* Assets.xcassets in Resources */,
 				58FC443521B132A60094E02C /* JPVideoPlayerSettingViewController.xib in Resources */,
+				585919E621EEE2AE00CAC864 /* SRDownLoadListCell.xib in Resources */,
 				58FC445421B132C70094E02C /* JPVideoPlayerAudioViewController.xib in Resources */,
 				58FC441721B130F20094E02C /* Main.storyboard in Resources */,
 				585919B321EDD48B00CAC864 /* ZFPlayer.bundle in Resources */,
@@ -474,9 +498,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585919E521EEE2AE00CAC864 /* SRDownLoadListCell.m in Sources */,
 				585919D321EDF14700CAC864 /* YCDownloadTask.m in Sources */,
 				58FC444C21B132C70094E02C /* JPVideoPlayerWeiBoListViewController.m in Sources */,
 				585919B721EDD48B00CAC864 /* ZFLoadingView.m in Sources */,
+				585919DB21EECD1500CAC864 /* SRSettingVC.m in Sources */,
+				585919D821EEC60400CAC864 /* SRDownloadVC.m in Sources */,
 				585919C021EDEA4000CAC864 /* SRDownloadManager.m in Sources */,
 				58FC441421B130F20094E02C /* ViewController.m in Sources */,
 				58FC445821B132DC0094E02C /* JPVideoPlayerDouyinViewController.m in Sources */,
@@ -486,6 +513,7 @@
 				585919BA21EDD48B00CAC864 /* UIImageView+ZFCache.m in Sources */,
 				58FC442D21B1325C0094E02C /* JPVPNetEasyViewController.m in Sources */,
 				585919B521EDD48B00CAC864 /* ZFPlayerControlView.m in Sources */,
+				585919DE21EED3A800CAC864 /* SRSourceListVC.m in Sources */,
 				585919D221EDF14700CAC864 /* YCDownloadUtils.m in Sources */,
 				58FC444D21B132C70094E02C /* JPVideoPlayerWeiBoViewController.m in Sources */,
 				58FC443421B132A60094E02C /* JPVideoPlayerSettingViewController.m in Sources */,
@@ -652,14 +680,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6YL76F8NTC;
+				DEVELOPMENT_TEAM = S58CK2GNVZ;
 				INFOPLIST_FILE = SRVideoPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.longrise.SRVideoPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = SRVideoPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -671,14 +699,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6YL76F8NTC;
+				DEVELOPMENT_TEAM = S58CK2GNVZ;
 				INFOPLIST_FILE = SRVideoPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.longrise.SRVideoPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = SRVideoPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
