@@ -65,12 +65,14 @@
         [self addSubview:self.topToolView];
         [self.topToolView addSubview:self.backBtn];
         [self.topToolView addSubview:self.titleLabel];
+        
         [self addSubview:self.bottomToolView];
         [self.bottomToolView addSubview:self.playOrPauseBtn];
         [self.bottomToolView addSubview:self.currentTimeLabel];
-        
         [self.bottomToolView addSubview:self.slider];
         [self.bottomToolView addSubview:self.totalTimeLabel];
+        [self.bottomToolView addSubview:self.catalogBtn];
+        
         [self addSubview:self.lockBtn];
         
         // 设置子控件的响应事件
@@ -133,19 +135,28 @@
     self.currentTimeLabel.frame = CGRectMake(min_x, min_y, min_w, min_h);
     self.currentTimeLabel.zf_centerY = self.playOrPauseBtn.zf_centerY;
     
+    min_x = self.currentTimeLabel.zf_right + 4;
+    min_y = 0;
+    min_w = self.bottomToolView.zf_width - 62 - 62 - 62 - min_x;
+    min_h = 30;
+    self.slider.frame = CGRectMake(min_x, min_y, min_w, min_h);
+    self.slider.zf_centerY = self.playOrPauseBtn.zf_centerY;
+    
     min_w = 62;
-    min_x = self.bottomToolView.zf_width - min_w - ((iPhoneX && self.player.orientationObserver.fullScreenMode == ZFFullScreenModeLandscape) ? 44: min_margin);
+    min_x = self.slider.zf_right + 4;
     min_y = 0;
     min_h = 30;
     self.totalTimeLabel.frame = CGRectMake(min_x, min_y, min_w, min_h);
     self.totalTimeLabel.zf_centerY = self.playOrPauseBtn.zf_centerY;
     
-    min_x = self.currentTimeLabel.zf_right + 4;
-    min_y = 0;
-    min_w = self.totalTimeLabel.zf_left - min_x - 4;
+    min_w = 62;
     min_h = 30;
-    self.slider.frame = CGRectMake(min_x, min_y, min_w, min_h);
-    self.slider.zf_centerY = self.playOrPauseBtn.zf_centerY;
+    min_x = self.bottomToolView.zf_width - min_w - ((iPhoneX && self.player.orientationObserver.fullScreenMode == ZFFullScreenModeLandscape) ? 44: min_margin);
+    min_y = 0;
+    self.catalogBtn.frame = CGRectMake(min_x, min_y, min_w, min_h);
+    self.catalogBtn.zf_centerY = self.playOrPauseBtn.zf_centerY;
+    
+   
     
     min_x = (iPhoneX && self.player.orientationObserver.fullScreenMode == ZFFullScreenModeLandscape) ? 50: 18;
     min_y = 0;
@@ -365,6 +376,11 @@
     self.player.lockedScreen = sender.selected;
 }
 
+//- (void)catalogBtnClicked
+//{
+//
+//}
+
 #pragma mark - getter
 
 - (UIView *)topToolView {
@@ -442,6 +458,18 @@
         _totalTimeLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _totalTimeLabel;
+}
+
+- (UIButton *)catalogBtn
+{
+    if (!_catalogBtn) {
+        _catalogBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_catalogBtn setTitle:@"目录" forState:0];
+        [_catalogBtn setTitleColor:UIColor.whiteColor forState:0];
+        _catalogBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+//        [_catalogBtn addTarget:self action:@selector(catalogBtnClicked) forControlEvents:1<<6];
+    }
+    return _catalogBtn;
 }
 
 - (UIButton *)lockBtn {

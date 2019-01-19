@@ -10,12 +10,17 @@
 #import <ZFPlayer/ZFPlayer.h>
 #import <ZFPlayer/ZFAVPlayerManager.h>
 #import "ZFPlayerControlView.h"
+#import "SRCatalogueView.h"
+#import <Masonry.h>
 
 @interface SRFullScreenVideoVC ()
+<SRCatalogueViewDelegate>
 
 @property (nonatomic, strong) ZFPlayerController *player;
 @property (nonatomic, strong) ZFPlayerControlView *controlView;
 @property (nonatomic, strong) ZFAVPlayerManager *playerManager;
+
+@property (nonatomic, strong) SRCatalogueView *catalogueView;
 
 @end
 
@@ -32,6 +37,9 @@
         [self.player stop];
         [self.navigationController popViewControllerAnimated:NO];
     };
+    
+    [self.controlView.landScapeControlView.catalogBtn addTarget:self action:@selector(catalogBtnClicked) forControlEvents:1<<6];
+    [self.controlView.landScapeControlView addSubview:self.catalogueView];
     
     self.player.controlView = self.controlView;
     self.player.orientationObserver.supportInterfaceOrientation = ZFInterfaceOrientationMaskLandscape;
@@ -51,7 +59,7 @@
         self.controlView.portraitControlView.slider.allowTapped = NO;
         self.controlView.landScapeControlView.slider.allowTapped = NO;
         
-        self.player.disableGestureTypes = ZFPlayerDisableGestureTypesPan;
+        self.player.disableGestureTypes = (ZFPlayerDisableGestureTypesPan | ZFPlayerDisableGestureTypesDoubleTap) ;
     }
     
     if (!_assetURL) {
@@ -61,31 +69,10 @@
     }
     
     NSLog(@"%@",self.player.assetURL);
-    //本地视频
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"designedByAppleInCalifornia" ofType:@"mp4"];
-//    NSURL *fileURL = [NSURL fileURLWithPath:path];
-//    self.playerManager.assetURL = fileURL;
-    
-//    NSString *downloadedPath = @"";
-//    NSURL *fileURL = [NSURL fileURLWithPath:downloadedPath];
-//    self.playerManager.assetURL = fileURL;
-    
-    //从网上下载好的视频
-//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:URLStr]];
-//    NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
-//    self.session = [NSURLSession sessionWithConfiguration:config delegate:self delegateQueue:[NSOperationQueue mainQueue]];
-//
-//    NSURLSessionDownloadTask *downloadTask = [self.session downloadTaskWithRequest:request];
-//    [downloadTask resume];
-//    self.downloadTask = downloadTask;
-    
-//    self.playerManager.playerPlayStateChanged = ^(id<ZFPlayerMediaPlayback>  _Nonnull asset, ZFPlayerPlaybackState playState) {
-//        NSLog(@"%lu",(unsigned long)playState);
-//    };
-    
+
     
     self.player.playerPlayTimeChanged = ^(id<ZFPlayerMediaPlayback>  _Nonnull asset, NSTimeInterval currentTime, NSTimeInterval duration) {
-        NSLog(@"%f/%f",currentTime,duration);
+//        NSLog(@"%f/%f",currentTime,duration);
         if (currentTime == duration) {
             
             UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
@@ -136,6 +123,19 @@
     return UIInterfaceOrientationLandscapeRight;
 }
 
+#pragma mark - 目录按钮点击事件
+- (void)catalogBtnClicked
+{
+    NSLog(@"catalogBtnClicked");
+    [self.catalogueView showCatalogueView];
+}
+
+#pragma mark - SRCatalogueViewDelegate
+-(void)sr_CatalogueViewDidSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
 #pragma mark - setter
 - (void)setAllowFastForward:(BOOL)allowFastForward
 {
@@ -151,7 +151,7 @@
         self.controlView.portraitControlView.slider.allowTapped = NO;
         self.controlView.landScapeControlView.slider.allowTapped = NO;
     
-        self.player.disableGestureTypes = ZFPlayerDisableGestureTypesPan;
+        self.player.disableGestureTypes = (ZFPlayerDisableGestureTypesPan | ZFPlayerDisableGestureTypesDoubleTap);
     }
 }
 
@@ -169,6 +169,17 @@
 }
 
 #pragma mark - Lazy
+- (SRCatalogueView *)catalogueView
+{
+    if (!_catalogueView) {
+        //初始化时隐藏
+        CGRect aRect = CGRectMake([UIScreen mainScreen].bounds.size.height, 0, [UIScreen mainScreen].bounds.size.height, [UIScreen mainScreen].bounds.size.width);
+        _catalogueView = [[SRCatalogueView alloc] initWithFrame:aRect];
+        _catalogueView.delegate = self;
+    }
+    return _catalogueView;
+}
+
 - (ZFPlayerController *)player
 {
     if (!_player) {

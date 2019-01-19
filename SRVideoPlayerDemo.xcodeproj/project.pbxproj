@@ -34,6 +34,10 @@
 		585919DE21EED3A800CAC864 /* SRSourceListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919DD21EED3A800CAC864 /* SRSourceListVC.m */; };
 		585919E521EEE2AE00CAC864 /* SRDownLoadListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919E321EEE2AE00CAC864 /* SRDownLoadListCell.m */; };
 		585919E621EEE2AE00CAC864 /* SRDownLoadListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585919E421EEE2AE00CAC864 /* SRDownLoadListCell.xib */; };
+		585919EA21F0668400CAC864 /* SRCatalogueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919E821F0668400CAC864 /* SRCatalogueView.m */; };
+		585919ED21F066AB00CAC864 /* SRSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919EB21F066AB00CAC864 /* SRSectionHeader.m */; };
+		585919F021F066B700CAC864 /* SRGCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919EF21F066B700CAC864 /* SRGCDTimerManager.m */; };
+		585919F321F0722700CAC864 /* UIColor+RCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919F221F0722600CAC864 /* UIColor+RCColor.m */; };
 		58FC441121B130F20094E02C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441021B130F20094E02C /* AppDelegate.m */; };
 		58FC441421B130F20094E02C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441321B130F20094E02C /* ViewController.m */; };
 		58FC441721B130F20094E02C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FC441521B130F20094E02C /* Main.storyboard */; };
@@ -58,7 +62,6 @@
 		58FC445421B132C70094E02C /* JPVideoPlayerAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58FC444821B132C60094E02C /* JPVideoPlayerAudioViewController.xib */; };
 		58FC445521B132C70094E02C /* JPVideoPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC444A21B132C70094E02C /* JPVideoPlayerDetailViewController.m */; };
 		58FC445821B132DC0094E02C /* JPVideoPlayerDouyinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC445721B132DC0094E02C /* JPVideoPlayerDouyinViewController.m */; };
-		58FC445A21B137480094E02C /* designedByAppleInCalifornia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 58FC445921B137480094E02C /* designedByAppleInCalifornia.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +118,14 @@
 		585919E221EEE2AD00CAC864 /* SRDownLoadListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRDownLoadListCell.h; sourceTree = "<group>"; };
 		585919E321EEE2AE00CAC864 /* SRDownLoadListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRDownLoadListCell.m; sourceTree = "<group>"; };
 		585919E421EEE2AE00CAC864 /* SRDownLoadListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SRDownLoadListCell.xib; sourceTree = "<group>"; };
+		585919E821F0668400CAC864 /* SRCatalogueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCatalogueView.m; sourceTree = "<group>"; };
+		585919E921F0668400CAC864 /* SRCatalogueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCatalogueView.h; sourceTree = "<group>"; };
+		585919EB21F066AB00CAC864 /* SRSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRSectionHeader.m; sourceTree = "<group>"; };
+		585919EC21F066AB00CAC864 /* SRSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRSectionHeader.h; sourceTree = "<group>"; };
+		585919EE21F066B700CAC864 /* SRGCDTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRGCDTimerManager.h; sourceTree = "<group>"; };
+		585919EF21F066B700CAC864 /* SRGCDTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRGCDTimerManager.m; sourceTree = "<group>"; };
+		585919F121F0722600CAC864 /* UIColor+RCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RCColor.h"; sourceTree = "<group>"; };
+		585919F221F0722600CAC864 /* UIColor+RCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RCColor.m"; sourceTree = "<group>"; };
 		58FC440C21B130F20094E02C /* SRVideoPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRVideoPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FC440F21B130F20094E02C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58FC441021B130F20094E02C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,7 +166,6 @@
 		58FC444A21B132C70094E02C /* JPVideoPlayerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerDetailViewController.m; sourceTree = "<group>"; };
 		58FC445621B132DC0094E02C /* JPVideoPlayerDouyinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoPlayerDouyinViewController.h; sourceTree = "<group>"; };
 		58FC445721B132DC0094E02C /* JPVideoPlayerDouyinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoPlayerDouyinViewController.m; sourceTree = "<group>"; };
-		58FC445921B137480094E02C /* designedByAppleInCalifornia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = designedByAppleInCalifornia.mp4; sourceTree = "<group>"; };
 		A66CB56F1C5055B3C0756781 /* Pods-SRVideoPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRVideoPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRVideoPlayerDemo/Pods-SRVideoPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +264,21 @@
 			path = core;
 			sourceTree = "<group>";
 		};
+		585919E721F0654E00CAC864 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				585919F121F0722600CAC864 /* UIColor+RCColor.h */,
+				585919F221F0722600CAC864 /* UIColor+RCColor.m */,
+				585919EE21F066B700CAC864 /* SRGCDTimerManager.h */,
+				585919EF21F066B700CAC864 /* SRGCDTimerManager.m */,
+				585919EC21F066AB00CAC864 /* SRSectionHeader.h */,
+				585919EB21F066AB00CAC864 /* SRSectionHeader.m */,
+				585919E921F0668400CAC864 /* SRCatalogueView.h */,
+				585919E821F0668400CAC864 /* SRCatalogueView.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		58FC440321B130F20094E02C = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +300,7 @@
 		58FC440E21B130F20094E02C /* SRVideoPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				585919E721F0654E00CAC864 /* Tool */,
 				585919C121EDF11D00CAC864 /* Lib */,
 				5859199421EDD48B00CAC864 /* ControlView */,
 				58FC443021B132870094E02C /* Setting */,
@@ -305,7 +331,6 @@
 				58FC441A21B130F40094E02C /* LaunchScreen.storyboard */,
 				58FC441D21B130F40094E02C /* Info.plist */,
 				58FC441E21B130F40094E02C /* main.m */,
-				58FC445921B137480094E02C /* designedByAppleInCalifornia.mp4 */,
 			);
 			path = SRVideoPlayerDemo;
 			sourceTree = "<group>";
@@ -428,7 +453,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				58FC444B21B132C70094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.xib in Resources */,
-				58FC445A21B137480094E02C /* designedByAppleInCalifornia.mp4 in Resources */,
 				58FC441C21B130F40094E02C /* LaunchScreen.storyboard in Resources */,
 				58FC444F21B132C70094E02C /* JPVideoPlayerDetailViewController.xib in Resources */,
 				58FC445221B132C70094E02C /* JPVideoPlayerWeiBoEqualHeightCell.xib in Resources */,
@@ -499,6 +523,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				585919E521EEE2AE00CAC864 /* SRDownLoadListCell.m in Sources */,
+				585919EA21F0668400CAC864 /* SRCatalogueView.m in Sources */,
+				585919ED21F066AB00CAC864 /* SRSectionHeader.m in Sources */,
 				585919D321EDF14700CAC864 /* YCDownloadTask.m in Sources */,
 				58FC444C21B132C70094E02C /* JPVideoPlayerWeiBoListViewController.m in Sources */,
 				585919B721EDD48B00CAC864 /* ZFLoadingView.m in Sources */,
@@ -524,6 +550,7 @@
 				58FC445521B132C70094E02C /* JPVideoPlayerDetailViewController.m in Sources */,
 				585919B621EDD48B00CAC864 /* ZFSmallFloatControlView.m in Sources */,
 				58FC445321B132C70094E02C /* JPVideoPlayerWeiBoUnequalHeightCell.m in Sources */,
+				585919F321F0722700CAC864 /* UIColor+RCColor.m in Sources */,
 				585919D121EDF14700CAC864 /* YCDownloader.m in Sources */,
 				58FC441F21B130F40094E02C /* main.m in Sources */,
 				58FC441121B130F20094E02C /* AppDelegate.m in Sources */,
@@ -535,6 +562,7 @@
 				585919B221EDD48B00CAC864 /* ZFNetworkSpeedMonitor.m in Sources */,
 				585919D021EDF14700CAC864 /* YCDownloadManager.m in Sources */,
 				585919B121EDD48B00CAC864 /* ZFLandScapeControlView.m in Sources */,
+				585919F021F066B700CAC864 /* SRGCDTimerManager.m in Sources */,
 				585919AE21EDD48B00CAC864 /* ZFUtilities.m in Sources */,
 				585919D421EDF14700CAC864 /* YCDownloadItem.m in Sources */,
 			);
