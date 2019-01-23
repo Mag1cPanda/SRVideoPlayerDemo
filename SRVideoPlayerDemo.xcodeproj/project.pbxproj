@@ -38,6 +38,7 @@
 		585919ED21F066AB00CAC864 /* SRSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919EB21F066AB00CAC864 /* SRSectionHeader.m */; };
 		585919F021F066B700CAC864 /* SRGCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919EF21F066B700CAC864 /* SRGCDTimerManager.m */; };
 		585919F321F0722700CAC864 /* UIColor+RCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 585919F221F0722600CAC864 /* UIColor+RCColor.m */; };
+		58B5EA8921F7151F007523AC /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EA8821F7151F007523AC /* CustomIOSAlertView.m */; };
 		58FC441121B130F20094E02C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441021B130F20094E02C /* AppDelegate.m */; };
 		58FC441421B130F20094E02C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC441321B130F20094E02C /* ViewController.m */; };
 		58FC441721B130F20094E02C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FC441521B130F20094E02C /* Main.storyboard */; };
@@ -126,6 +127,8 @@
 		585919EF21F066B700CAC864 /* SRGCDTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRGCDTimerManager.m; sourceTree = "<group>"; };
 		585919F121F0722600CAC864 /* UIColor+RCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RCColor.h"; sourceTree = "<group>"; };
 		585919F221F0722600CAC864 /* UIColor+RCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RCColor.m"; sourceTree = "<group>"; };
+		58B5EA8721F7151F007523AC /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOSAlertView.h; sourceTree = "<group>"; };
+		58B5EA8821F7151F007523AC /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
 		58FC440C21B130F20094E02C /* SRVideoPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRVideoPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FC440F21B130F20094E02C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58FC441021B130F20094E02C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -233,6 +236,8 @@
 		585919C121EDF11D00CAC864 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				58B5EA8721F7151F007523AC /* CustomIOSAlertView.h */,
+				58B5EA8821F7151F007523AC /* CustomIOSAlertView.m */,
 				585919C221EDF14700CAC864 /* YCDownloadSession */,
 			);
 			path = Lib;
@@ -526,6 +531,7 @@
 				585919EA21F0668400CAC864 /* SRCatalogueView.m in Sources */,
 				585919ED21F066AB00CAC864 /* SRSectionHeader.m in Sources */,
 				585919D321EDF14700CAC864 /* YCDownloadTask.m in Sources */,
+				58B5EA8921F7151F007523AC /* CustomIOSAlertView.m in Sources */,
 				58FC444C21B132C70094E02C /* JPVideoPlayerWeiBoListViewController.m in Sources */,
 				585919B721EDD48B00CAC864 /* ZFLoadingView.m in Sources */,
 				585919DB21EECD1500CAC864 /* SRSettingVC.m in Sources */,

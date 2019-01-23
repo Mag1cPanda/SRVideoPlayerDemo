@@ -12,6 +12,7 @@
 #import "ZFPlayerControlView.h"
 #import "SRCatalogueView.h"
 #import <Masonry.h>
+#import "CustomIOSAlertView.h"
 
 @interface SRFullScreenVideoVC ()
 <SRCatalogueViewDelegate>
@@ -46,7 +47,7 @@
     [self.player enterFullScreen:YES animated:NO];
     
     NSString *coverURLStr = @"http://www.yxybb.com/LEAP/Web/FlashFiles/Model/logo.png";
-    [self.controlView showTitle:@"11111" coverURLString:coverURLStr fullScreenMode:ZFFullScreenModeLandscape];
+    [self.controlView showTitle:@"1111111111" coverURLString:coverURLStr fullScreenMode:ZFFullScreenModeLandscape];
     
     //是否允许播放器快进
     if (_allowFastForward) {
@@ -64,6 +65,7 @@
     
     if (!_assetURL) {
         NSString *URLStr = @"http://zhimei.hntv.tv/bbvideo/2018/8/31/3-1windows7dqdhgb.mp4";
+//        http://zhimei.hntv.tv/bbvideo/2018/8/31/3-3tbhckcz.mp4
         NSURL *fileURL = [NSURL URLWithString:URLStr];
         self.playerManager.assetURL = fileURL;
     }
@@ -75,15 +77,36 @@
 //        NSLog(@"%f/%f",currentTime,duration);
         if (currentTime == duration) {
             
-            UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
-            lbl.center = weak_self.controlView.center;
-            lbl.text = @"学习完成";
-            lbl.backgroundColor = [UIColor redColor];
-            [weak_self.controlView addSubview:lbl];
+//            UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+//            lbl.center = weak_self.controlView.center;
+//            lbl.text = @"学习完成";
+//            lbl.backgroundColor = [UIColor redColor];
+//            [weak_self.controlView addSubview:lbl];
             
+            CustomIOSAlertView *alertView = [[CustomIOSAlertView alloc] init];
+            alertView.parentView = weak_self.player.controlView;
+            [alertView setContainerView:[weak_self createDemoView]];
+            [alertView setButtonTitles:[NSMutableArray arrayWithObjects:@"Close1", @"Close2", nil]];
+            [alertView setOnButtonTouchUpInside:^(CustomIOSAlertView *alertView, int buttonIndex) {
+                NSLog(@"Block: Button at position %d is clicked on alertView %d.", buttonIndex, (int)[alertView tag]);
+                [alertView close];
+            }];
+            [alertView setUseMotionEffects:true];
+            [alertView show];
         }
     };
     
+}
+
+- (UIView *)createDemoView
+{
+    UIView *demoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 290, 200)];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 270, 180)];
+    imageView.backgroundColor = [UIColor redColor];
+    [demoView addSubview:imageView];
+    
+    return demoView;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
